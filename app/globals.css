@@ -2,32 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h2 {
+  font-family: "Playball", cursive;
+  font-size: 2rem;
+}
+h3 {
+  font-family: "Prata", serif;
+  padding-top: 1%;
+  font-size: 3rem;
+}
+/* Custom Properties */
+:root {
+  /* colors */
+  --white: #fff;
+  --light-shade-purple: #f7f6fb;
+  --gold: #e1caae;
+  --dark-shade-blue: #313139;
+  --glow-color: hsl(33 46% 78%);
+
+  /* shadow */
+  --mid-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --lg-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* font sizes */
+  --h1-size: clamp(2.052rem, 8vw + 1rem, 4.594rem);
+  --h2-size: clamp(1.441rem, 8vw + 1rem, 3.063rem);
+  --h3-size: clamp(1.953rem, 2vw +1rem, 3.375rem);
+  --h4-size: clamp(1.563rem, 2vw +1rem, 2.25rem);
+  --h5-size: clamp(1.25rem, 2vw + 1rem, 1.5rem);
+  --h6-size: clamp(1rem + 1vw +1rem, 1.125rem);
+  --body-size: var(var(--h6-size));
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-family: "Playball", cursive;
+  font-weight: 300;
+  font-size: var(--h2-size);
+  letter-spacing: 0.2rem;
+}
+
+h3 {
+  font-family: "Prata", serif;
+  font-weight: 300;
+  font-size: var(--h3-size);
+  line-height: 0;
+}
+
+p {
+  font-family: "Mada", sans-serif;
+  font-weight: 400;
+  font-size: var(--body-size);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: cover;
 }

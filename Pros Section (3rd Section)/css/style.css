@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 12px;
+}
+
+.pros{
+    background-color: #313139;
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+}
+.prosContainer{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.prosItems{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prosIcon img{
+    width: 100px;
+}
+
+.prosText h6{
+    font-size: 2rem;
+    font-family: "Mada", sans-serif;
+    font-weight: 400;
+}
+
+@media(max-width:900px){
+    .prosIcon img{
+        width: 70px;
+    }
+    .prosText h6{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:700px){
+    .prosContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    .prosIcon img{
+        width: 70px;
+    }
+    .prosText h6{
+        font-size: 1.5rem;
+    }
+    .prosItems{
+        width: 50%;
+        margin: 20px 0;
+    }
+
+}
