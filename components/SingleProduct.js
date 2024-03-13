@@ -25,9 +25,9 @@ export default function SingleProduct({ src }) {
             <Image
               src={src}
               alt="Front"
-              layout="fill"
-              objectFit="cover"
               className="transition-opacity duration-300"
+              fill
+              style={{ objectFit: "cover" }}
             />
           </div>
           <div
@@ -37,9 +37,9 @@ export default function SingleProduct({ src }) {
             <Image
               src="/1-b.png"
               alt="Back"
-              layout="fill"
-              objectFit="cover"
               className="transition-opacity duration-300"
+              fill
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>

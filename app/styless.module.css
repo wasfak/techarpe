@@ -22,9 +22,6 @@
 
 /* Main styling */
 .hero {
-  background-image: url(/2.jpg);
-  background-attachment: fixed;
-  background-size: cover;
   width: 100vw;
   min-height: 100vh;
   display: flex;

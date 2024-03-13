@@ -1,9 +1,19 @@
 import Image from "next/image";
 import styles from "../app/styless.module.css";
+import homeImg from "../public/2.webp";
 
 export default function HeroSection() {
   return (
     <section className={styles.hero}>
+      <div className="absolute -z-10 inset-0">
+        <Image
+          src={homeImg}
+          alt="car factory"
+          fill
+          style={{ objectFit: "cover" }}
+          priority
+        />
+      </div>
       <div className={styles.heroContainer}>
         <div className={styles.heroHeaders}>
           <h2>Unveil Timeless</h2>
